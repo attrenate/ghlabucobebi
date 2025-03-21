@@ -10,14 +10,74 @@ header {
 }
 header .header-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+header #list-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+header .nav-item {
+  color: #A7E1FA;
+  font-size: 1rem;
+  line-height: 1.318125rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.button-wrapper .header-buttons {
+  background-color: #A7E1FA;
+  color: #00274D;
+  font-size: 1rem;
+  padding: 0.75 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.button-wrapper .header-buttons:hover {
+  background-color: #77d1f7;
 }
 
 li {
   list-style: none;
   color: #A7E1FA;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+li:hover {
+  color: #ff6600;
 }
 
 h1 {
   color: #A7E1FA;
+  position: absolute;
+}
+
+body {
+  background-color: #121826;
+  font-family: "Playfair Display", serif;
+}
+body .tagline {
+  color: midnightblue;
+  margin-left: 2rem;
+  font-size: small;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+body .tagline:hover {
+  color: #A7E1FA;
+}
+body h2 {
+  color: #A7E1FA;
+  font-size: 3rem;
+  margin-left: 1rem;
 }/*# sourceMappingURL=ghlabuci-1.css.map */
