@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00274D;
+  height: 7rem;
+  font-family: "Playfair Display", serif;
+}
+header .header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  color: #A7E1FA;
+}
+
+h1 {
+  color: #A7E1FA;
+}/*# sourceMappingURL=ghlabuci-1.css.map */
