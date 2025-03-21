@@ -14,27 +14,93 @@ $font: 'Playfair Display', serif;
     display: flex;
     justify-content: space-between;
 }
+@mixin flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 *{
     margin: 0;
     padding: 0;
 }
+// style for the header
 header{
     background-color: $background-color;
     height: 7rem;
     font-family: $font;
-    .header-nav{
-        @include flex-space-between();
+    .header-nav {
+        @include flex-center;
+      }
+      
+      #list-wrapper {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      
+      .nav-item {
+        color: $text-color;
+        font-size: 1rem;
+        line-height: 1.318125rem;
+      }
+      
+    }
+    .button-wrapper{
+      @include flex-end();
+      gap: 2rem;
+      margin-bottom: 1rem;
+      .header-buttons{
+        background-color: #A7E1FA;
+        color: #00274D;
+        font-size: 1rem;
+        padding: 0.75 1.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-family: $font;
+        transition: all 0.3s ease-in-out;
+        text-transform: uppercase;
 
+        &:hover{
+            background-color: darken($text-color, 10%);
+        }
+      }
     }
-   
-    
-    }
-    li{
+ 
+    li {
         list-style: none;
         color: $text-color;
-    }
+        cursor: pointer;
+        transition: color 0.3s ease-in-out; 
+      
+        &:hover { 
+          color: #ff6600; 
+        }
+      }
     h1{
        color: $text-color;
+       position: absolute;
+       
+    }
+    // styling for the body
+    body{
+        background-color: #121826;
+        font-family: $font;
+        .tagline{
+            color: midnightblue;
+            margin-left: 2rem;
+            font-size: small;
+            @include flex-end();
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                color: $text-color;
+            }
+        }
+        h2{
+            color: $text-color;
+            font-size: 3rem;
+            margin-left: 1rem;
+        }
     }
