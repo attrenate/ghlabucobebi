@@ -1,0 +1,40 @@
+// Variables
+$background-color: #00274D;
+$text-color: #A7E1FA;
+$font: 'Playfair Display', serif;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: $background-color;
+    height: 7rem;
+    font-family: $font;
+    .header-nav{
+        @include flex-space-between();
+
+    }
+   
+    
+    }
+    li{
+        list-style: none;
+        color: $text-color;
+    }
+    h1{
+       color: $text-color;
+    }
